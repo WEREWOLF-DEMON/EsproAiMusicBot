@@ -44,7 +44,7 @@ async def start(_, msg):
               InlineKeyboardButton("︎𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/ritikTEAM/EsproMusic"),
               ],
               [
-              InlineKeyboardButton("𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧︎", url=f"https://github.com/ritikTEAM/YumikooRobot"),
+              InlineKeyboardButton("𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧︎", url=f"https://github.com/ritikTEAM/EsprokooRobot"),
 InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/ritikTEAM/ritikCHATBOT"),
 ],
 [

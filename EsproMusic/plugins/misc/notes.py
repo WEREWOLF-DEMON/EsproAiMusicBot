@@ -4,7 +4,7 @@ from pyrogram import filters
 from EsproMusic.utils.ritik_ban import admin_filter
 from EsproMusic.mongo.notesdb import *
 from EsproMusic.utils.notes_func import GetNoteMessage, exceNoteMessageSender, privateNote_and_admin_checker
-from EsproMusic.utils.yumidb import user_admin
+from EsproMusic.utils.Esprodb import user_admin
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup , Message , CallbackQuery
 from pyrogram.enums import ChatMemberStatus
 
