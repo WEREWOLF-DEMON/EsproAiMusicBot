@@ -21,7 +21,7 @@
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─
 </h3>
 
-- Get your [Espro Music](https://github.com/TeamEspro/EsproAiMusicBot/blob/main/sample.env)
+- Get your [Espro Ai Music](https://github.com/TeamEspro/EsproAiMusicBot/blob/main/sample.env)
 - Upgrade and Update by :
 `sudo apt-get update && sudo apt-get upgrade -y`
 - Install Ffmpeg by :
