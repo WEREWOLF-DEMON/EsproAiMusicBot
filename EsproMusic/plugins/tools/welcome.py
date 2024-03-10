@@ -115,10 +115,11 @@ def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
     welcome_font = ImageFont.truetype('EsproMusic/assets/font.ttf', size=61)
     #draw.text((630, 540), f'ID: {id}', fill=(255, 255, 255), font=font)
     #
- #   draw.text((630, 300), f'NAME: {user}', fill=(255, 255, 255), font=font)
+    draw.text((630, 300), f'NAME: {user}', fill=(255, 255, 255), font=font)
     draw.text((630, 450), f'ID: {id}', fill=(255, 255, 255), font=font)
-#    draw.text((630, 150), f"{chatname}", fill=(225, 225, 225), font=welcome_font)
-  #  draw.text((630, 230), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
+  
+    draw.text((630, 150), f"{chatname}", fill=(225, 225, 225), font=welcome_font)
+    draw.text((630, 230), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
 
     #
     pfp_position = (48, 88)
