@@ -7,7 +7,7 @@ import httpx
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """**
-✪ ωεℓ¢σмє ƒσя 𝚍𝚊𝚡𝚡 яєρσѕ ✪
+✪ ωєℓ¢σмє тσ тєαм єѕρяσ яєρσ ✪
  
  ➲ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ ✰
  
@@ -29,49 +29,29 @@ start_txt = """**
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("𝗔𝗗𝗗 𝗠𝗘", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+          InlineKeyboardButton("Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/HEROKUFREECC"),
-          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/iam_ritik"),
+          InlineKeyboardButton("🍁Sᴜᴘᴘᴏʀᴛ🥀", url="https://t.me/EsproSupport"),
+          InlineKeyboardButton("🍁Uᴘᴅᴀᴛᴇ🥀", url="https://t.me/EsproUpdate"),
           ],
                [
-                InlineKeyboardButton("𝗟𝗜𝗩𝗘 𝗖𝗖", url="https://t.me/ALLTYPECC"),
+                InlineKeyboardButton("❄️Oᴡɴᴇʀ❄️", url="https://t.me/i_ii_ritikraj_ii_i"),
 
 ],
 [
-              InlineKeyboardButton("𝗕𝗔𝗡 𝗔𝗟𝗟︎", url=f"https://github.com/ritikTEAM/ritikBANALL"),
-              InlineKeyboardButton("︎𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/ritikTEAM/EsproMusic"),
+              InlineKeyboardButton("—͟͞͞★Mᴜꜱɪᴄㅤ✓︎", url=f"https://github.com/TeamEspro/EsproMusicBot"),
+              InlineKeyboardButton("︎—͟͞͞★Sᴛʀɪɴɢㅤ✓", url=f"https://github.com/TeamEspro/EsproStringBot"),
               ],
               [
-              InlineKeyboardButton("𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧︎", url=f"https://github.com/ritikTEAM/EsprokooRobot"),
-InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/ritikTEAM/ritikCHATBOT"),
-],
-[
-InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚𝗕𝗢𝗧", url=f"https://github.com/ritikTEAM/ritikSTRINGBOT"),
-InlineKeyboardButton("𝗖𝗛𝗔𝗧𝗚𝗣𝗧", url=f"https://github.com/ritikTEAM/ritikCHATGPT"),
-],
-[
-              InlineKeyboardButton("𝗩𝗣𝗦", url=f"https://github.com/ritikTEAM/Kaali-Linux"),
-              InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘︎", url=f"https://github.com/ritikTEAM/ritikMOVIEBOT"),
-              ],
-              [
-              InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚 𝗛𝗔𝗖𝗞︎", url=f"https://github.com/ritikTEAM/ritikSTRINGHACK"),
-InlineKeyboardButton("𝗜𝗗 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/ritikTEAM/ritikIDCHAT"),
-],
-[
-InlineKeyboardButton("𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f"https://github.com/ritikTEAM/ritikUSERBOT"),
-InlineKeyboardButton("𝗦𝗘𝗔𝗥𝗖𝗛𝗕𝗢𝗧", url=f"https://github.com/ritikTEAM/SEARCH_BOT"),
-],
-[
-InlineKeyboardButton("𝗖𝗖 𝗕𝗢𝗧", url=f"https://github.com/ritikTEAM/CC_BOT"),
-
-        ]]
+                InlineKeyboardButton("● ◀️───ᴄʜᴀᴛ────▶ ●", url="https://github.com/TeamEspro/EsproChatBot"),
+                ]]
+              
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/faa1f3ad7116e33d9f402.jpg",
+        photo="https://telegra.ph/file/de9e5afa186bbe69e7c0c.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
@@ -84,7 +64,7 @@ InlineKeyboardButton("𝗖𝗖 𝗕𝗢𝗧", url=f"https://github.com/ritikTEAM
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://api.github.com/repos/ritikTEAM/EsproMusic/contributors")
+        response = await client.get("https://api.github.com/repos/TeamEspro/EsproAiMusicBot/contributors")
     
     if response.status_code == 200:
         users = response.json()
@@ -94,12 +74,11 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/ritikTEAM/EsproMusic) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/HEROKUFREECC)
+        text = f"""[🍁Sᴜᴘᴘᴏʀᴛ🥀](https://t.me/EsproSupport) | [🍁Uᴘᴅᴀᴛᴇ🥀](https://t.me/EsproUpdate)
 | 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
 ----------------
 {list_of_users}"""
         await app.send_message(message.chat.id, text=text, disable_web_page_preview=True)
     else:
         await app.send_message(message.chat.id, text="Failed to fetch contributors.")
-
 
