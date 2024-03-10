@@ -86,8 +86,8 @@ async def unpin_command_handler(client, message):
         reply_markup=InlineKeyboardMarkup(
             [   
                 [
-                    InlineKeyboardButton(text="𝗬𝗘𝗦", callback_data="unpinall=yes"),
-                    InlineKeyboardButton(text="𝗡𝗢", callback_data="unpinall=no")
+                    InlineKeyboardButton(text="Yᴇs", callback_data="unpinall=yes"),
+                    InlineKeyboardButton(text="Nᴏ", callback_data="unpinall=no")
                 ]
             ]
         )
